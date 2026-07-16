@@ -1,0 +1,9 @@
+../Core/Src/STS_CTRL.c:14:6:STS_EnableTorque	2
+../Core/Src/STS_CTRL.c:40:6:STS_WritePosition	6
+../Core/Src/STS_CTRL.c:95:6:STS_SyncWrite_Group	7
+../Core/Src/STS_CTRL.c:157:6:STS_WriteMotorSpeed	3
+../Core/Src/STS_CTRL.c:195:9:STS_ReadPosition	7
+../Core/Src/STS_CTRL.c:234:6:STS_JogPositionUp	3
+../Core/Src/STS_CTRL.c:252:6:STS_JogPositionDown	3
+../Core/Src/STS_CTRL.c:270:6:STS_WritePosEx	3
+../Core/Src/STS_CTRL.c:311:6:STS_StopMotor	1

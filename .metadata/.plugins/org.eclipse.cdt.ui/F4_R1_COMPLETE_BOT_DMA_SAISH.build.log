@@ -1,0 +1,10 @@
+14:13:01 **** Incremental Build of configuration Debug for project F4_R1_COMPLETE_BOT_DMA_SAISH ****
+make -j18 all 
+arm-none-eabi-size  F4_R1_COMPLETE_BOT_DMA_SAISH.elf 
+   text	   data	    bss	    dec	    hex	filename
+  71212	    368	  10464	  82044	  1407c	F4_R1_COMPLETE_BOT_DMA_SAISH.elf
+Finished building: default.size.stdout
+ 
+
+14:13:02 Build Finished. 0 errors, 0 warnings. (took 613ms)
+

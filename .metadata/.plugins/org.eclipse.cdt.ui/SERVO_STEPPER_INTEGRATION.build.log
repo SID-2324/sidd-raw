@@ -1,0 +1,10 @@
+16:20:57 **** Incremental Build of configuration Debug for project SERVO_STEPPER_INTEGRATION ****
+make -j18 all 
+arm-none-eabi-size  SERVO_STEPPER_INTEGRATION.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11988	    108	   2132	  14228	   3794	SERVO_STEPPER_INTEGRATION.elf
+Finished building: default.size.stdout
+ 
+
+16:20:58 Build Finished. 0 errors, 0 warnings. (took 453ms)
+

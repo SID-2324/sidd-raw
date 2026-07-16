@@ -1,0 +1,5 @@
+../Core/Src/STEP_SERVO.c:31:13:Safe_CDC_Transmit	4
+../Core/Src/STEP_SERVO.c:48:6:STS_JogCommand	41
+../Core/Src/STEP_SERVO.c:251:6:STS_AutoPickCommand	10
+../Core/Src/STEP_SERVO.c:373:6:STS_CalibrateEnvironment	8
+../Core/Src/STEP_SERVO.c:423:6:SERVO_BOOT	4

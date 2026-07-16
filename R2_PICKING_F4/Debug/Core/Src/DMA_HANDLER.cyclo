@@ -1,0 +1,2 @@
+../Core/Src/DMA_HANDLER.c:7:6:HAL_UART_TxCpltCallback	3
+../Core/Src/DMA_HANDLER.c:23:6:HAL_TIM_PeriodElapsedCallback	2

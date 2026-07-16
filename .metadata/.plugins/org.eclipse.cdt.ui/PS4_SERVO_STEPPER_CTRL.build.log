@@ -1,0 +1,10 @@
+17:35:56 **** Incremental Build of configuration Debug for project PS4_SERVO_STEPPER_CTRL ****
+make -j18 all 
+arm-none-eabi-size  PS4_SERVO_STEPPER_CTRL.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12400	     96	   2128	  14624	   3920	PS4_SERVO_STEPPER_CTRL.elf
+Finished building: default.size.stdout
+ 
+
+17:35:57 Build Finished. 0 errors, 0 warnings. (took 1s.203ms)
+

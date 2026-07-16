@@ -1,0 +1,4 @@
+../Core/Src/STS_SERVO.c:4:6:STS_EnableTorque	32	static
+../Core/Src/STS_SERVO.c:25:6:STS_WritePos	48	static
+../Core/Src/STS_SERVO.c:51:6:STS_SetAccel	32	static
+../Core/Src/STS_SERVO.c:72:6:moveSmooth	24	static

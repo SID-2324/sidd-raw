@@ -1,0 +1,14 @@
+../Core/Src/vl53l1_platform.c:51:8:VL53L1_WriteMulti	1
+../Core/Src/vl53l1_platform.c:56:8:VL53L1_ReadMulti	1
+../Core/Src/vl53l1_platform.c:61:8:VL53L1_WrByte	1
+../Core/Src/vl53l1_platform.c:66:8:VL53L1_WrWord	1
+../Core/Src/vl53l1_platform.c:74:8:VL53L1_WrDWord	1
+../Core/Src/vl53l1_platform.c:84:8:VL53L1_RdByte	1
+../Core/Src/vl53l1_platform.c:89:8:VL53L1_RdWord	1
+../Core/Src/vl53l1_platform.c:97:8:VL53L1_RdDWord	1
+../Core/Src/vl53l1_platform.c:108:8:VL53L1_WaitMs	1
+../Core/Src/vl53l1_platform.c:117:10:VL53L1X_GetStableAverage	4
+../Core/Src/vl53l1_platform.c:151:6:I2C_Recover_Bus	2
+../Core/Src/vl53l1_platform.c:198:6:VL53L1X_MultiBoot	10
+../Core/Src/vl53l1_platform.c:326:6:Scan_I2C_Bus	4
+../Core/Src/vl53l1_platform.c:349:6:Debug_Print_Sensor_Value	3

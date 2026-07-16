@@ -1,0 +1,10 @@
+17:36:01 **** Incremental Build of configuration Debug for project nema ****
+make -j18 all 
+arm-none-eabi-size  nema.elf 
+   text	   data	    bss	    dec	    hex	filename
+  29356	    468	   2052	  31876	   7c84	nema.elf
+Finished building: default.size.stdout
+ 
+
+17:36:01 Build Finished. 0 errors, 0 warnings. (took 200ms)
+

@@ -1,0 +1,10 @@
+14:21:34 **** Incremental Build of configuration Debug for project R2_PICKING_F4 ****
+make -j18 all 
+arm-none-eabi-size  R2_PICKING_F4.elf 
+   text	   data	    bss	    dec	    hex	filename
+  67616	    368	  10152	  78136	  13138	R2_PICKING_F4.elf
+Finished building: default.size.stdout
+ 
+
+14:21:34 Build Finished. 0 errors, 0 warnings. (took 505ms)
+

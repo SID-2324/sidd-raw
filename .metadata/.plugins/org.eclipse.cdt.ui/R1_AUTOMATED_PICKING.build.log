@@ -1,0 +1,10 @@
+12:54:31 **** Incremental Build of configuration Debug for project R1_AUTOMATED_PICKING ****
+make -j18 all 
+arm-none-eabi-size  R1_AUTOMATED_PICKING.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28348	    136	   2240	  30724	   7804	R1_AUTOMATED_PICKING.elf
+Finished building: default.size.stdout
+ 
+
+12:54:32 Build Finished. 0 errors, 0 warnings. (took 389ms)
+

@@ -1,0 +1,2 @@
+../Core/Src/PS4_UART.c:17:12:ApplyDeadband	16	static
+../Core/Src/PS4_UART.c:28:6:PS4_ProcessPacket	80	static

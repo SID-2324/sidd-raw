@@ -1,0 +1,83 @@
+/*
+ * Accel_Stepper.cpp
+ *
+ *  Created on: Mar 12, 2026
+ *      Author: LENOVO
+ */
+// AccelStepper.cpp modified for STM32 HAL
+#include <AccelStepper.h>
+
+// External timer handle defined in main.c (e.g., TIM2)
+extern TIM_HandleTypeDef htim2;
+
+uint32_t AccelStepper::getMicros()
+{
+    return __HAL_TIM_GET_COUNTER(&htim2);
+}
+
+AccelStepper::AccelStepper(uint8_t interface, STM32_Pin pin1, STM32_Pin pin2, STM32_Pin pin3, STM32_Pin pin4, bool enable)
+{
+    _interface = interface;
+    _currentPos = 0;
+    _targetPos = 0;
+    _speed = 0.0;
+    _maxSpeed = 1.0;
+    _acceleration = 0.0;
+    _stepInterval = 0;
+    _lastStepTime = 0;
+    _direction = DIRECTION_CW;
+    _n = 0;
+    _c0 = 0.0;
+    _cn = 0.0;
+    _cmin = 1.0;
+    _pin[0] = pin1;
+    _pin[1] = pin2;
+    _pin[2] = pin3;
+    _pin[3] = pin4;
+    _enablePin = {0, 0};
+
+    for (uint8_t i = 0; i < 4; i++)
+        _pinInverted[i] = 0;
+
+    if (enable)
+        enableOutputs();
+}
+
+void AccelStepper::setOutputPins(uint8_t mask)
+{
+    uint8_t numpins = 2;
+    if (_interface == FULL4WIRE || _interface == HALF4WIRE)
+        numpins = 4;
+    else if (_interface == FULL3WIRE || _interface == HALF3WIRE)
+        numpins = 3;
+
+    for (uint8_t i = 0; i < numpins; i++)
+    {
+        HAL_GPIO_WritePin(_pin[i].port, _pin[i].pin,
+            (mask & (1 << i)) ? (GPIO_PinState)!_pinInverted[i] : (GPIO_PinState)_pinInverted[i]);
+    }
+}
+
+// ... Implementation of moveTo, run, computeNewSpeed, etc.
+// replace all micros() calls with getMicros() ...
+
+boolean AccelStepper::runSpeed()
+{
+    if (!_stepInterval)
+        return false;
+
+    uint32_t time = getMicros();
+    if (time - _lastStepTime >= _stepInterval)
+    {
+        if (_direction == DIRECTION_CW)
+            _currentPos += 1;
+        else
+            _currentPos -= 1;
+
+        step(_currentPos);
+        _lastStepTime = time;
+        return true;
+    }
+    return false;
+}
+

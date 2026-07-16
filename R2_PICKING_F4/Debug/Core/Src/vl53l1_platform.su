@@ -1,0 +1,14 @@
+../Core/Src/vl53l1_platform.c:51:8:VL53L1_WriteMulti	40	static
+../Core/Src/vl53l1_platform.c:56:8:VL53L1_ReadMulti	40	static
+../Core/Src/vl53l1_platform.c:61:8:VL53L1_WrByte	32	static
+../Core/Src/vl53l1_platform.c:66:8:VL53L1_WrWord	24	static
+../Core/Src/vl53l1_platform.c:74:8:VL53L1_WrDWord	24	static
+../Core/Src/vl53l1_platform.c:84:8:VL53L1_RdByte	32	static
+../Core/Src/vl53l1_platform.c:89:8:VL53L1_RdWord	24	static
+../Core/Src/vl53l1_platform.c:97:8:VL53L1_RdDWord	24	static
+../Core/Src/vl53l1_platform.c:108:8:VL53L1_WaitMs	16	static
+../Core/Src/vl53l1_platform.c:117:10:VL53L1X_GetStableAverage	32	static
+../Core/Src/vl53l1_platform.c:151:6:I2C_Recover_Bus	32	static
+../Core/Src/vl53l1_platform.c:198:6:VL53L1X_MultiBoot	40	static
+../Core/Src/vl53l1_platform.c:326:6:Scan_I2C_Bus	16	static
+../Core/Src/vl53l1_platform.c:349:6:Debug_Print_Sensor_Value	24	static

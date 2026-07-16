@@ -1,0 +1,4 @@
+../Core/Src/STS_CTRL.c:8:6:STS_EnableTorque	32	static
+../Core/Src/STS_CTRL.c:34:6:STS_WritePosition	48	static
+../Core/Src/STS_CTRL.c:72:6:STS_WriteMotorSpeed	40	static
+../Core/Src/STS_CTRL.c:110:6:STS_StopMotor	16	static
