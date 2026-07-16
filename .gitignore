@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+match_log.txt
+*.pt
+yolo-pose-model/
